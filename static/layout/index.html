@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/asset/main.css">
+    <title>Jesse's Land</title>
+</head>
+<body>
+    {{ template "header" }}
+    {{ range .}}
+    <div><p>{{.}}</p></div>
+    {{ end }}
+    {{ template "footer" }}
+</body>
+</html>
